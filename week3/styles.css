@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: rgb(255, 251, 202);
 }
 h1 {
     color: tomato;
@@ -10,12 +10,42 @@ h2 {
 h3 {
     color: mediumseagreen;
 }
-h4 {
-    color: crimson;
+em {
+    color: darkblue;
 }
 p {
     color: #000;
 }
 pre {
     color: #000;
+}
+.details {
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.details hr {
+    margin-right: 70%;
+}
+span {
+    color: deepskyblue;
+}
+.picture {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+}
+.picture img {
+    height: 100%;
+    position: absolute;
+    left: -1%;
+    bottom: 0;
+}
+.dets {
+    margin-left: 30%;
+    margin-bottom: 3%;
+}
+.dets hr {
+    margin-right: 80%;
 }
