@@ -31,7 +31,6 @@ pre {
 }
 span {
     color: darkblue;
-    border: 3px solid black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .picture {
@@ -54,3 +53,9 @@ span {
 .dets hr {
     margin-right: 85%;
 }
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
