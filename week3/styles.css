@@ -1,0 +1,21 @@
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: tomato;
+}
+h2 {
+    color: dodgerblue;
+}
+h3 {
+    color: mediumseagreen;
+}
+h4 {
+    color: crimson;
+}
+p {
+    color: #000;
+}
+pre {
+    color: #000;
+}
