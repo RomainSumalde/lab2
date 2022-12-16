@@ -30,7 +30,7 @@ pre {
     font-size: 20px;
 }
 .details hr {
-    margin-right: 62%;
+    margin-right: 8%;
 }
 span {
     color: darkblue;
@@ -56,9 +56,7 @@ span {
     margin-bottom: 3%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.dets hr {
-    margin-right: 85%;
-}
+
 #myHeader {
     background-color: lightblue;
     color: black;
