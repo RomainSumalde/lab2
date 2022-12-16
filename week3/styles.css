@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: rgb(255, 251, 202);
 }
@@ -45,6 +48,7 @@ span {
     left: -1%;
     bottom: 0;
     right: 0;
+    float: left;
 }
 .dets {
     margin-left: 5%;
@@ -61,12 +65,23 @@ span {
     padding: 10px;
     text-align: center;
   }
-
 article {
   float: left;
   padding: 10px;
-  margin-left: 30%;
   width: 30%;
   background-color: #f1f1f1;
   height: 200px; 
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 200px; 
+  background: #ccc;
+  padding: 10px;
+  margin-left: 30%;
+}
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; 
+  }
 }
