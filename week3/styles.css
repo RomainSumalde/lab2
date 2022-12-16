@@ -47,7 +47,8 @@ span {
     right: 0;
 }
 .dets {
-    margin-left: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 3%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -60,3 +61,12 @@ span {
     padding: 10px;
     text-align: center;
   }
+
+article {
+  float: left;
+  padding: 10px;
+  margin-left: 30%;
+  width: 30%;
+  background-color: #f1f1f1;
+  height: 200px; 
+}
