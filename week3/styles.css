@@ -11,7 +11,7 @@ h3 {
     color: mediumseagreen;
 }
 em {
-    color: darkblue;
+    color: lightseagreen;
 }
 p {
     color: #000;
@@ -23,12 +23,16 @@ pre {
     margin-left: 30%;
     margin-top: 3%;
     margin-bottom: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
 }
 .details hr {
-    margin-right: 70%;
+    margin-right: 62%;
 }
 span {
-    color: deepskyblue;
+    color: darkblue;
+    border: 3px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .picture {
     width: 45%;
@@ -45,7 +49,8 @@ span {
 .dets {
     margin-left: 30%;
     margin-bottom: 3%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .dets hr {
-    margin-right: 80%;
+    margin-right: 85%;
 }
