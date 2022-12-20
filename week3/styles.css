@@ -14,7 +14,7 @@ h3 {
     color: mediumseagreen;
 }
 em {
-    color: lightseagreen;
+    color: darkblue;
 }
 p {
     color: #000;
@@ -33,7 +33,8 @@ pre {
     margin-right: 8%;
 }
 span {
-    color: darkblue;
+    padding-left: 10px;
+    color: lightskyblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .picture {
@@ -58,10 +59,10 @@ span {
 }
 
 #myHeader {
-    background-color: lightblue;
+    background-color: #3c3c3c;
     color: black;
     padding: 10px;
-    text-align: center;
+    text-align: left;
   }
 article {
   float: left;
@@ -69,6 +70,7 @@ article {
   width: 35%;
   background-color: #f1f1f1;
   height: 200px; 
+  background-color: rgb(210, 210, 210);
 }
 nav {
   float: left;
@@ -77,6 +79,7 @@ nav {
   background: #ccc;
   padding: 10px;
   margin-left: 30%;
+  background-color: rgb(210, 210, 210);
 }
 @media screen and (max-width: 800px) {
   .left, .main, .right {
@@ -88,9 +91,6 @@ section {
     margin-right: 5%;
     margin-top: 25%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-address {
-    text-align: center;
 }
 
 /* use this to comment in CSS */
