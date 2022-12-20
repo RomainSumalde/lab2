@@ -20,10 +20,11 @@ em {
     color: darkblue;
 }
 p {
-    color: #000;
+    text-align: center;
+    color: black;
 }
 pre {
-    color: #000;
+    color: black;
 }
 .details {
     margin-left: 30%;
@@ -32,12 +33,14 @@ pre {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
+
 .details hr {
     margin-right: 8%;
 }
 span {
     padding-left: 10px;
     color: lightskyblue;
+    text-shadow: 2px 2px 5px darkblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .picture {
