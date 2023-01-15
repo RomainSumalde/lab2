@@ -5,9 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #080808;
-    color: #fff;
-    display: flex;
+    background: #0e1320;
+    color: #eee9d2;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -47,7 +46,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #A7C7E7;
+    background: #2d4366; 
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -59,18 +58,14 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
-/*  display: inline-flex; */
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #A7C7E7;
+    color: #8ca2c1;
 }
-
-
-
 .header-text .dynamic-txts{
     margin-left: 0;
     height: 90px;
@@ -81,7 +76,7 @@ nav ul li a:hover::after{
     list-style: none;
     font-size: 60px;
     font-weight: 500;
-    color: #A7C7E7;
+    color: #8ca2c1;
     position: relative;
     top: 0;
     animation: slide 6s steps(4) infinite;
@@ -102,7 +97,7 @@ nav ul li a:hover::after{
     height: 100%;
     width: 100%;
     background: #000000;
-    border-left: 5px solid#A7C7E7;
+    border-left: 5px solid#8ca2c1;
     animation: typing 1.5s steps(10) infinite;
 }
 @keyframes typing{
@@ -111,4 +106,70 @@ nav ul li a:hover::after{
         margin: 0 -35px 0 35px;
     }
 
+}
+
+/* About Section */
+#about{
+    padding: 80px 0;
+    color: #eee9d2;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #8ca2c1;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #2d4366;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #8ca2c1;
+    font-size: 16px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }

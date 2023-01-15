@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <div id="header"> <!-- Header -->
+    <!-- Header Section -->
+    <div id="header"> 
         <div class="container">
             <nav>
                 <img src="images/Minimalist Logo1.png" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -28,12 +28,68 @@
                     <li><span>Gamer</span></li>
                     <li><span>Editor</span></li>
                     <li><span>Programmer</span></li>
-                    <li><span>Tambay</span></li>
+                    <li><span>Student</span></li>
                 </ul>
                 <h1>Hi, I'm <span>Romain</span><br>Sumalde</h1>
             </div>
         </div>
     </div>
+    <!--About Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/picture.png" alt="picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! My name is Romain Gerard C. Sumalde. I graduated in Software Development Strand from iACADEMY, Makati City. 
+                   Besides programming I have an immense interest in gaming, cycling, video editing and photography.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DaVinci Resolve</span><br>Video Editor</li>
+                            <li><span>Full Stack Developer</span><br>Programmer</li>
+                            <li><span>Photography</span><br>iPhone Photography</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2019 - 2021</span><br>C++, C#, and Java</li>
+                            <li><span>2020 - 2022</span><br>DaVinci Resolve</li>
+                            <li><span>2022 - Present</span><br>Python, Java, Web Dev, and Mobile Prog</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018 - 2019</span><br>San Isidro Catholic School</li>
+                            <li><span>2019 - 2021</span><br>iACADEMY</li>
+                            <li><span>2021 - Present</span><br>Asia Pacific College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 
 </body>
 </html>
