@@ -18,11 +18,11 @@
             <nav>
                 <img src="Images/Minimalist Logo1.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -86,23 +86,75 @@
                     <i class="fa-solid fa-code"></i>
                     <h2>Programming</h2>
                     <p>With my knowledge on C++, C#, Java, and Python. I am confident that I can help you with your project in programming.</p>
-                    <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>Video Editing</h2>
                     <p>After learning how to use DaVinci Resolve I can edit videos for gaming montage, cinematic, and other types of editing</p>
-                    <a href="#">Learn More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-camera-retro"></i>
                     <h2>Photography</h2>
                     <p>My hobby for photography just started this year so I am not yet confident with my photography skills.</p>
-                    <a href="#">Learn More</a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <!-- Pictures Grid -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/background.jpg">
+                </div>
+                <div class="work">
+                    <img src="Images/background.jpg">
+                </div>
+                <div class="work">
+                    <img src="Images/background.jpg">
+                </div>
+            </div>
+            <!-- Videos Grid -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/background.jpg">
+                </div>
+                <div class="work">
+                    <img src="Images/background.jpg">
+                </div>
+                <div class="work">
+                    <img src="Images/background.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-square-envelope"></i> rcsumalde@student.apc.edu.ph</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 0945-154-1323</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
