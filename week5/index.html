@@ -10,7 +10,6 @@
 <link rel="icon" type="logo" href="Images/Minimalist Logo.png">
 <script src="https://kit.fontawesome.com/48931abacc.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <!-- Header Section -->
     <div id="header"> 
@@ -154,12 +153,12 @@
                 </div>
             </div>
         </div>
-
     <form name="submit-to-google-sheet">
         <input name="email" type="email" placeholder="Email" required>
         <button type="submit">Send</button>
     </form>
-        <!-- JavaScript -->
+    
+    <!-- JavaScript -->
     <script>
         // JavaScript lesson 18.9 Arrow Function
         // Moving Text
@@ -204,7 +203,11 @@
             side.style.right = "-200px";
         }
 
-        
+        // JavaScript lesson 24 Web API
+        // Google sheet
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz66qz66GEof0s-zvhGYCRYmPHnzC_aqWIWMjLS_NbiY2VGc9G9bG1vbQAnSHkgVsHSRg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
         
         // JavaScript lesson 15.1 Errors
         // Message Pop Up
