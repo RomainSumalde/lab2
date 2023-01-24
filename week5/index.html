@@ -26,12 +26,8 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <ul class="dynamic-txts">
-                    <li><span>Gamer</span></li>
-                    <li><span>Editor</span></li>
-                    <li><span>Programmer</span></li>
-                    <li><span>Student</span></li>
-                </ul>
+                <span class="text first-text">I'm a</span>
+                <span class="text sec-text">Programmer</span>
                 <h1>Hi, I'm <span>Romain</span><br>Sumalde</h1>
             </div>
         </div>
@@ -157,7 +153,24 @@
         </div>
         <!-- JavaScript -->
         <!-- Lesson 10.3 for of loop -->
+        <!-- Lesson 18.9 arrow function -->
     <script>
+        const text = document.querySelector(".sec-text");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Programmer";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Video Editor";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Photographer";
+            }, 8000);
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
+
+
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
         function opentab(tabname){
