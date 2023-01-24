@@ -17,13 +17,15 @@
         <div class="container">
             <nav>
                 <img src="Images/Minimalist Logo1.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <span class="text first-text">I'm a</span>
@@ -152,9 +154,9 @@
             </div>
         </div>
         <!-- JavaScript -->
-        <!-- Lesson 10.3 for of loop -->
-        <!-- Lesson 18.9 arrow function -->
     <script>
+        // JavaScript lesson 18.9 Arrow Function
+        // Moving Text
         const text = document.querySelector(".sec-text");
         const textLoad = () => {
             setTimeout(() => {
@@ -169,8 +171,9 @@
         }
         textLoad();
         setInterval(textLoad, 12000);
-
-
+        
+        // JavaScript lesson 10.3 For of Loop
+        // Change Tab on About Me
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
         function opentab(tabname){
@@ -183,6 +186,16 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // JavaScript lesson 23 Window 
+        // Side Menu
+        var side = document.getElementById("sidemenu");
+        function openMenu(){
+            side.style.right = "0";
+        }
+        function closeMenu(){
+            side.style.right = "-200px";
         }
     </script>
 
