@@ -14,8 +14,8 @@
 <!-- PHP Section -->
 <?php
 // define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+$nameErr = $emailErr = "";
+$name = $email = $comment = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -197,15 +197,6 @@ function test_input($data) {
                             <textarea name="Message"  placeholder="Message" required rows="6" cols="40"><?php echo $comment;?></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
-
-                        <?php
-                            echo "<h2>Your Input:</h2>";
-                            echo $name;
-                            echo "<br>";
-                            echo $email;
-                            echo "<br>";
-                            echo $comment;
-                        ?>
                         <span id="msg"></span>
                     </div>
                 </div>
@@ -278,6 +269,12 @@ function test_input($data) {
                 .catch(error => console.error('Error!', error.message))
         })
         */
+       let btnSub = document.querySelector('button');
+       let inputs = document.querySelectorAll('input');
+
+       btnSub.addEventListener('click', () => {
+        inputs.forEach(input => input.value = '');
+       });
     </script>
 </body>
 </html>
