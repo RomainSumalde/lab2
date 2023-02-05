@@ -202,8 +202,6 @@ function test_input($data) {
                             <span class="error">* <?php echo $emailErr;?></span>
                             <br><br>
                             Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-                            <br><br>
-                            <input type="submit" name="submit" value="Submit">  
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
 
