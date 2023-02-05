@@ -271,9 +271,11 @@ function test_input($data) {
         */
        let btnSub = document.querySelector('button');
        let inputs = document.querySelectorAll('input');
+       let textA = document.querySelectorAll('textarea');
 
        btnSub.addEventListener('click', () => {
         inputs.forEach(input => input.value = '');
+        textA.forEach(textarea => textarea.value = '');
        });
     </script>
 </body>
