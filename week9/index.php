@@ -253,7 +253,7 @@ function test_input($data) {
         const scriptURL = 'https://script.google.com/macros/s/AKfycbz66qz66GEof0s-zvhGYCRYmPHnzC_aqWIWMjLS_NbiY2VGc9G9bG1vbQAnSHkgVsHSRg/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-        
+        */
         // JavaScript lesson 15.1 Errors
         // Message Pop Up
         form.addEventListener('submit', e => {
@@ -268,15 +268,6 @@ function test_input($data) {
                 })
                 .catch(error => console.error('Error!', error.message))
         })
-        */
-       let btnSub = document.querySelector('button');
-       let inputs = document.querySelectorAll('input');
-       let textA = document.querySelectorAll('textarea');
-
-       btnSub.addEventListener('click', () => {
-        inputs.forEach(input => input.value = '');
-        textA.forEach(textarea => textarea.value = '');
-       });
     </script>
 </body>
 </html>
