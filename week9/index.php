@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="logo" href="Images/Minimalist Logo.png">
 <script src="https://kit.fontawesome.com/48931abacc.js" crossorigin="anonymous"></script>
+<style>
+.error {color: #FF0000;}
+</style>
 </head>
 <body>
 <!-- PHP Section -->
