@@ -186,22 +186,20 @@ function test_input($data) {
                         </div>
                     </div>
                     <div class="contact-right">
+                        <!--
                         <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
-                        <h2>PHP Form Validation Example</h2>
-                        <p><span class="error">* required field</span></p>
+                        -->
                         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-                            Name: <input type="text" name="name" value="<?php echo $name;?>">
+                            <input type="text" name="name" placeholder="Name" required value="<?php echo $name;?>">
                             <span class="error">* <?php echo $nameErr;?></span>
-                            <br><br>
-                            E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+                            <input type="text" name="email" placeholder="Email" required value="<?php echo $email;?>">
                             <span class="error">* <?php echo $emailErr;?></span>
-                            <br><br>
-                            Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+                            <textarea name="Message"  placeholder="Message" required rows="6" cols="40"><?php echo $comment;?></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
 
@@ -263,7 +261,7 @@ function test_input($data) {
         function closeMenu(){
             side.style.right = "-200px";
         }
-
+        /*
         // JavaScript lesson 24 Web API
         // Google sheet
         const scriptURL = 'https://script.google.com/macros/s/AKfycbz66qz66GEof0s-zvhGYCRYmPHnzC_aqWIWMjLS_NbiY2VGc9G9bG1vbQAnSHkgVsHSRg/exec'
@@ -284,6 +282,7 @@ function test_input($data) {
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+        */
     </script>
 </body>
 </html>
