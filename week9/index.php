@@ -247,13 +247,13 @@ function test_input($data) {
         function closeMenu(){
             side.style.right = "-200px";
         }
-        /*
+        
         // JavaScript lesson 24 Web API
         // Google sheet
         const scriptURL = 'https://script.google.com/macros/s/AKfycbz66qz66GEof0s-zvhGYCRYmPHnzC_aqWIWMjLS_NbiY2VGc9G9bG1vbQAnSHkgVsHSRg/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-        */
+        
         // JavaScript lesson 15.1 Errors
         // Message Pop Up
         form.addEventListener('submit', e => {
