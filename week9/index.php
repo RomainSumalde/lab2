@@ -9,9 +9,6 @@
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="logo" href="Images/Minimalist Logo.png">
 <script src="https://kit.fontawesome.com/48931abacc.js" crossorigin="anonymous"></script>
-<style>
-.error {color: #FF0000;}
-</style>
 </head>
 <body>
 <!-- PHP Section -->
@@ -196,9 +193,7 @@ function test_input($data) {
                         -->
                         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
                             <input type="text" name="name" placeholder="Name" required value="<?php echo $name;?>">
-                            <span class="error">* <?php echo $nameErr;?></span>
                             <input type="text" name="email" placeholder="Email" required value="<?php echo $email;?>">
-                            <span class="error">* <?php echo $emailErr;?></span>
                             <textarea name="Message"  placeholder="Message" required rows="6" cols="40"><?php echo $comment;?></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
