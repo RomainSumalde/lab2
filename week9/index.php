@@ -157,7 +157,7 @@
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
                         <?php include 'form.php'; ?>
-                        <span id="msg"></span>
+                        <!-- <span id="msg"></span> -->
                     </div>
                 </div>
             </div>
