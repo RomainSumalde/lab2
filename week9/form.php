@@ -42,16 +42,16 @@ function test_input($data) {
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") 
     {$servername = "localhost";
-	  $username = "root";
-    $password = "";
-    $dbname = "mydbwebprogmi211";
+	  $username = "webprogmi211";
+    $password = "webprogmi211";
+    $dbname = "webprogmi211";
 	// Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
 	// Check connection
 	if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
 	}
-	$sql = "INSERT INTO myguests (name, email, comment)
+	$sql = "INSERT INTO rcsumalde_MyGuests (name, email, comment)
 	VALUES ('$name', '$email', '$comment')";
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
