@@ -11,47 +11,6 @@
 <script src="https://kit.fontawesome.com/48931abacc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!-- PHP Section -->
-<?php
-// define variables and set to empty values
-$nameErr = $emailErr = "";
-$name = $email = $comment = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
     <!-- Header Section -->
     <div id="header"> 
         <div class="container">
@@ -175,11 +134,11 @@ function test_input($data) {
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
                         <p><i class="fa-solid fa-square-envelope"></i> rcsumalde@student.apc.edu.ph</p>
-                        <p><i class="fa-solid fa-square-phone"></i> 0945-154-1323</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 09xx-xxx-xxxx</p>
                         <div class="social-icons">
                             <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-github"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/RomainSumalde"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/romain-gerard-sumalde-49272a21a/"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="contact-right">
@@ -192,11 +151,12 @@ function test_input($data) {
                         </form>
                         -->
                         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-                            <input type="text" name="name" placeholder="Name" required value="<?php echo $name;?>">
-                            <input type="text" name="email" placeholder="Email" required value="<?php echo $email;?>">
-                            <textarea name="Message"  placeholder="Message" required rows="6" cols="40"><?php echo $comment;?></textarea>
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" name="email" placeholder="Email" required>
+                            <textarea name="comment"  placeholder="Message" rows="6" cols="40"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
+                        <?php include 'form.php'; ?>
                         <span id="msg"></span>
                     </div>
                 </div>
